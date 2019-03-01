@@ -4,6 +4,7 @@ package log
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func Debug(format string, v ...interface{}) {
