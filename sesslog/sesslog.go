@@ -157,6 +157,11 @@ func (l *SessLogger) Close() {
 }
 
 
+func (l *SessLogger) Clear() {
+	l.logs = l.logs.Init()
+}
+
+
 func (l *SessLogger) Debugf(format string, v ...interface{}) {
 	if false == _shouldDebug {
 		return
