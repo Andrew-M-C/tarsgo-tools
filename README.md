@@ -1,5 +1,5 @@
 # tarsgo-tools
-This is a repo of tools for [Tencent TarsGo](https://github.com/TarsCloud/TarsGo/). 
+This is a repo of tools for [TarsGo](https://github.com/TarsCloud/TarsGo/) originally developed by Tencent.
 
 [中文文档](https://cloud.tencent.com/developer/article/1394093)
 
@@ -37,13 +37,13 @@ func main() {
 
         myInt, exist := tarsconf.GetInt("/tars/application/server", "myInt", -1)
         fmt.Printf("%t, myInt: %d\n", exist, myInt)
-        
+
         myInt2, exist := tarsconf.GetInt("/tars/application/server", "myInt2", -2)
         fmt.Printf("%t, myInt2: %d\n", exist, myInt2)
 
         myLong, exist := tarsconf.GetLong("/tars/application/server", "myLong", -3)
         fmt.Printf("%t, myLong: %d\n", exist, myLong)
-        
+
         myErrorInt, exist := tarsconf.GetInt("/tars/application/server", "myInt", -4)
         fmt.Printf("%t, myErrorInt: %d\n", exist, myErrorInt)
     }
